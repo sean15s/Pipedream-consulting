@@ -241,6 +241,17 @@
     color: var(--smoke);
   }
 
+  .services-qualifier {
+    margin-top: 1.2rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rust);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    color: var(--bone);
+  }
+
   /* Top row: 3 cards */
   .service-row {
     display: grid;
@@ -295,7 +306,16 @@
     font-size: 1.5rem;
     letter-spacing: 0.06em;
     color: var(--white);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-trigger {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--ember);
+    margin-bottom: 1rem;
   }
 
   .service-desc {
@@ -305,6 +325,8 @@
     color: var(--ash);
     margin-bottom: 1.5rem;
   }
+
+  .service-desc strong { color: var(--bone); font-weight: 500; }
 
   .service-price {
     font-family: 'IBM Plex Mono', monospace;
@@ -523,41 +545,50 @@
       <div class="section-label">What We Do</div>
       <h2 class="section-title">Services Built for Steel</h2>
     </div>
-    <p class="services-intro">
-      Every engagement is built around how steel actually gets sold. No generic frameworks.
-      No consultants who've never worked a territory. Just systems that work in this industry.
-    </p>
+    <div>
+      <p class="services-intro">
+        Every engagement is built around how steel actually gets sold. The buying dynamics, the quote cycle, the incumbent supplier problem, the pricing conversation. None of it transfers cleanly from another industry, so none of this was borrowed from one.
+      </p>
+      <p class="services-qualifier">
+        Built for sales teams of three to thirty reps at service centers, distributors, fabricators, and metals manufacturers.
+      </p>
+    </div>
   </div>
 
   <!-- Top row: 3 cards -->
   <div class="service-row top">
-    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting?subject=Fractional Sales Enablement'">
-      <div class="service-name">Fractional Sales Enablement</div>
-      <p class="service-desc">Dedicated sales capacity without the full-time overhead. Territory strategy, pipeline development, and rep accountability built around your team's actual gaps.</p>
-      <div class="service-price">Monthly Retainer</div>
-    </div>
-    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting?subject=Sales Playbook Build'">
-      <div class="service-name">Sales Playbook Build</div>
-      <p class="service-desc">A custom playbook your team will actually use. Prospecting sequences, objection handling, pricing talk tracks, and territory management frameworks.</p>
+    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting'">
+      <div class="service-name">New Rep Onboarding</div>
+      <div class="service-trigger">You just hired.</div>
+      <p class="service-desc">The last new rep took six months to write meaningful business, and your manager answered the same questions every morning to get them there. A structured 30/60/90 built on real steel cycles gets a rep <strong>quoting by week three and closing by month two</strong>, with a graduation standard so you know early if they are going to make it.</p>
       <div class="service-price">Flat Fee Project</div>
     </div>
-    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting?subject=New Rep Onboarding'">
-      <div class="service-name">New Rep Onboarding</div>
-      <p class="service-desc">Get new reps producing faster. Structured 30/60/90 onboarding built around real steel sales cycles and customer dynamics.</p>
+    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting'">
+      <div class="service-name">Cold Outreach Audit</div>
+      <div class="service-trigger">Reps are calling. Nothing is landing.</div>
+      <p class="service-desc">Activity is rarely the problem. Targeting usually is. We tear down what your team is sending and saying right now, then rebuild the account targeting, the sequences, and the call framework so reps <strong>get into the quoting rotation</strong> at accounts that already buy what you sell.</p>
+      <div class="service-price">Flat Fee Project</div>
+    </div>
+    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting'">
+      <div class="service-name">Sales Playbook Build</div>
+      <div class="service-trigger">Your best rep has a process. It lives in his head.</div>
+      <p class="service-desc">When he retires or leaves, it walks out with him, and every new hire starts from zero. We document what actually works: prospecting, objection handling, holding price without apologizing for it, territory management. <strong>Written for your product mix and your customers</strong>, not adapted from a software company.</p>
       <div class="service-price">Flat Fee Project</div>
     </div>
   </div>
 
   <!-- Bottom row: 2 cards centered -->
   <div class="service-row bottom">
-    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting?subject=Cold Outreach Audit'">
-      <div class="service-name">Cold Outreach Audit</div>
-      <p class="service-desc">Review and rebuild your prospecting strategy. Email sequences,  call frameworks, and targeting that gets you in the quoting rotation.</p>
-      <div class="service-price">Flat Fee Project</div>
+    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting'">
+      <div class="service-name">Fractional Sales Enablement</div>
+      <div class="service-trigger">You need a sales process. Nobody has time to build one.</div>
+      <p class="service-desc">Not a rented rep. We build the system and the coaching rhythm your sales manager runs, on a fixed monthly cadence with a written field report. <strong>The structure that makes the reps you already have perform better</strong>, and it stays with the company when a rep does not.</p>
+      <div class="service-price">Monthly Retainer</div>
     </div>
-    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting?subject=Advisory'">
+    <div class="service-card" onclick="window.location='https://calendly.com/pipedreamconsulting'">
       <div class="service-name">Advisory & Consulting</div>
-      <p class="service-desc">Focused sessions for specific challenges. Territory restructuring, pricing strategy, competitive positioning, or rep performance issues.</p>
+      <div class="service-trigger">One problem. No engagement.</div>
+      <p class="service-desc">A territory that needs restructuring, a pricing decision you are second guessing, a rep you are not sure you should keep. Book the time, talk it through with someone who has been on that side of it, <strong>get a straight answer and move on</strong>.</p>
       <div class="service-price">Hourly Rate</div>
     </div>
   </div>
